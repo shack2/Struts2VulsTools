@@ -1,0 +1,8 @@
+E:\c#\projects\struts2013\Test\bin\x86\Debug\Test.exe.config
+E:\c#\projects\struts2013\Test\bin\x86\Debug\Test.exe
+E:\c#\projects\struts2013\Test\bin\x86\Debug\Test.pdb
+E:\c#\projects\struts2013\Test\obj\x86\Debug\Test.Form1.resources
+E:\c#\projects\struts2013\Test\obj\x86\Debug\Test.Properties.Resources.resources
+E:\c#\projects\struts2013\Test\obj\x86\Debug\Test.csproj.GenerateResource.Cache
+E:\c#\projects\struts2013\Test\obj\x86\Debug\Test.exe
+E:\c#\projects\struts2013\Test\obj\x86\Debug\Test.pdb

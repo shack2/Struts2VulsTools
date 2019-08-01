@@ -1,0 +1,130 @@
+E:\c#\projects\Test\Test\bin\Debug\Test.exe
+E:\c#\projects\Test\Test\bin\Debug\Test.pdb
+E:\c#\projects\Test\Test\obj\Debug\ResolveAssemblyReference.cache
+E:\c#\projects\Test\Test\obj\Debug\Test.Form1.resources
+E:\c#\projects\Test\Test\obj\Debug\Test.Properties.Resources.resources
+E:\c#\projects\Test\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\c#\projects\Test\Test\obj\Debug\Test.exe
+E:\c#\projects\Test\Test\obj\Debug\Test.pdb
+E:\c#\projects\Test_bak\Test\obj\Debug\Test.exe
+E:\c#\projects\Test_bak\Test\obj\Debug\Test.pdb
+E:\c#\projects\Test_bak\Test\bin\Debug\Test.exe
+E:\c#\projects\Test_bak\Test\bin\Debug\Test.pdb
+E:\c#\projects\Test_bak\Test\obj\Debug\Test.Form1.resources
+E:\c#\projects\Test_bak\Test\obj\Debug\Test.Properties.Resources.resources
+E:\c#\projects\Test_bak\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\c#\projects\Test_bak\Test\bin\Debug\Test.exe.config
+E:\c#\projects\struts2013\Test\bin\Debug\Test.exe.config
+E:\c#\projects\struts2013\Test\obj\Debug\Test.exe
+E:\c#\projects\struts2013\Test\obj\Debug\Test.pdb
+E:\c#\projects\struts2013\Test\bin\Debug\Test.exe
+E:\c#\projects\struts2013\Test\bin\Debug\Test.pdb
+E:\c#\projects\struts2013\Test\obj\Debug\Test.Form1.resources
+E:\c#\projects\struts2013\Test\obj\Debug\Test.Properties.Resources.resources
+E:\c#\projects\struts2013\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\c#\projects\struts2013\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+D:\开发\c#\projects\struts2013\Test\bin\Debug\Test.exe.config
+D:\开发\c#\projects\struts2013\Test\obj\Debug\Test.exe
+D:\开发\c#\projects\struts2013\Test\obj\Debug\Test.pdb
+D:\开发\c#\projects\struts2013\Test\bin\Debug\Test.exe
+D:\开发\c#\projects\struts2013\Test\bin\Debug\Test.pdb
+D:\开发\c#\projects\struts2013\Test\obj\Debug\Test.Form1.resources
+D:\开发\c#\projects\struts2013\Test\obj\Debug\Test.Properties.Resources.resources
+D:\开发\c#\projects\struts2013\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+D:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.exe.config
+D:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.exe
+D:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.pdb
+D:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.exe
+D:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.pdb
+D:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.Form1.resources
+D:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.Properties.Resources.resources
+D:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+D:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+F:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.exe.config
+F:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.exe
+F:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.pdb
+F:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.Form1.resources
+F:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.Properties.Resources.resources
+F:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+F:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.exe
+F:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.pdb
+F:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.exe.config
+E:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2013\Test\bin\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.Form1.resources
+E:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.Properties.Resources.resources
+E:\MyCoding\c#\projects\struts2013\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\MyCoding\c#\projects\struts2015\Test\bin\Debug\Test.exe.config
+E:\MyCoding\c#\projects\struts2015\Test\obj\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2015\Test\obj\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2015\Test\bin\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2015\Test\bin\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2015\Test\obj\Debug\Test.Form1.resources
+E:\MyCoding\c#\projects\struts2015\Test\obj\Debug\Test.Properties.Resources.resources
+E:\MyCoding\c#\projects\struts2015\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\MyCoding\c#\projects\struts2015\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\bin\Debug\Test.exe.config
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\obj\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\obj\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\bin\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\bin\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\obj\Debug\Test.Form1.resources
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\obj\Debug\Test.Properties.Resources.resources
+E:\MyCoding\c#\projects\struts2015 - 副本 (2)\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.exe.config
+E:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.Properties.Resources.resources
+E:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.Main.resources
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\bin\Debug\Test.exe.config
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\obj\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\obj\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\bin\Debug\Test.exe
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\bin\Debug\Test.pdb
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\obj\Debug\Test.Main.resources
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\obj\Debug\Test.Properties.Resources.resources
+E:\MyCoding\c#\projects\struts2017 - 副本\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+E:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+F:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.exe
+F:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.pdb
+F:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.exe
+F:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.pdb
+F:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.Main.resources
+F:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.Properties.Resources.resources
+F:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+H:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.exe
+H:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.pdb
+H:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.exe
+H:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.pdb
+H:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.Main.resources
+H:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.Properties.Resources.resources
+H:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+H:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+G:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.exe
+G:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.pdb
+G:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.exe
+G:\MyCoding\c#\projects\struts2017\Test\bin\Debug\Test.pdb
+G:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.Main.resources
+G:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.Properties.Resources.resources
+G:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.csproj.GenerateResource.Cache
+G:\MyCoding\c#\projects\struts2017\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+G:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.exe
+G:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.pdb
+F:\MyCoding\c#\projects\struts2018\Test\bin\Debug\Test.exe
+F:\MyCoding\c#\projects\struts2018\Test\bin\Debug\Test.pdb
+F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.csprojAssemblyReference.cache
+F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.Main.resources
+F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.Properties.Resources.resources
+F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.csproj.GenerateResource.cache
+F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.exe
+F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.pdb
