@@ -105,20 +105,18 @@ namespace http.model
                 sb.Append("Cookie: " + Cookie + "\r\n");
             }
             sb.Append("\r\n");
-
-            if (!"".Equals(data))
-            {
-                sb.Append(data);
-            }
-
-            else if (MUData.Count > 0)
+            if (MUData.Count > 0)
             {
                 foreach (var c in this.MUData)
-                 {
-                     sb.Append("-----------------------------7e116d19044c\r\nContent-Disposition: form-data; name=" + c.Key+"\r\n\r\n" + c.Value+ "\r\n");
-                 }
+                {
+                    sb.Append("-----------------------------7e116d19044c\r\nContent-Disposition: form-data; name=" + c.Key + "\r\n\r\n" + c.Value + "\r\n");
+                }
                 sb.Append("-----------------------------7e116d19044c--");
-            }                            
+            }
+            else if (!"".Equals(data))
+            {
+                sb.Append(data);
+            }                  
             return sb.ToString();
 
         }

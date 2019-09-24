@@ -118,7 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="txt_info.Text" xml:space="preserve">
-    <value>2018-08-24：
+    <value>2019-09-25：
+优化部分EXP在部分情况下被WAF拦截的问题，提高检测成功率，优化自定义上传路径exp，文件所在目录不存在时自动创建目录，防止文件因为目录不存在，导致上传失败。
+2018-08-24：
 增加S2-057 Struts 2.3 to 2.3.34，Struts 2.5 to 2.5.16  此漏洞影响范围非常小，要求配置条件比较苛刻，同时，一些特定版本没有看到有沙盒绕过，所以，目前exp只是基于S2-045改写的，所以exp并不是所有版本都能用，正常情况下Struts 2.3.5-2.3.31,Struts 2.5-2.5.10版本可以使用此exp。
 2017-07-07：
 增加S2-048 Struts 2.3.X  支持检查官方示例struts2-showcase应用的代码执行漏洞，参考地址：http://127.0.0.1:8080/struts2-showcase/integration/saveGangster.action

@@ -16,3 +16,12 @@ F:\MyCoding\c#\projects\struts2017\Test\obj\Release\Test.Main.resources
 F:\MyCoding\c#\projects\struts2017\Test\obj\Release\Test.Properties.Resources.resources
 F:\MyCoding\c#\projects\struts2017\Test\obj\Release\Test.csproj.GenerateResource.Cache
 F:\MyCoding\c#\projects\struts2017\Test\bin\Release\SmartThreadPool.dll
+F:\MyCoding\c#\projects\struts2018\Test\bin\Release\Test.exe
+F:\MyCoding\c#\projects\struts2018\Test\bin\Release\Test.pdb
+F:\MyCoding\c#\projects\struts2018\Test\obj\Release\Test.Main.resources
+F:\MyCoding\c#\projects\struts2018\Test\obj\Release\Test.Properties.Resources.resources
+F:\MyCoding\c#\projects\struts2018\Test\obj\Release\Test.csproj.GenerateResource.cache
+F:\MyCoding\c#\projects\struts2018\Test\obj\Release\Test.csproj.CoreCompileInputs.cache
+F:\MyCoding\c#\projects\struts2018\Test\obj\Release\Test.exe
+F:\MyCoding\c#\projects\struts2018\Test\obj\Release\Test.pdb
+F:\MyCoding\c#\projects\struts2018\Test\obj\Release\Test.csprojAssemblyReference.cache

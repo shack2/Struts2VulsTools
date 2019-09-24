@@ -128,3 +128,12 @@ F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.csproj.GenerateResource.c
 F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
 F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.exe
 F:\MyCoding\c#\projects\struts2018\Test\obj\Debug\Test.pdb
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\bin\Debug\Test.exe
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\bin\Debug\Test.pdb
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\obj\Debug\Test.csprojAssemblyReference.cache
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\obj\Debug\Test.Main.resources
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\obj\Debug\Test.Properties.Resources.resources
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\obj\Debug\Test.csproj.GenerateResource.cache
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\obj\Debug\Test.exe
+F:\MyCoding\c#\GitHub\struts2018\Struts2VulsTools\Test\obj\Debug\Test.pdb

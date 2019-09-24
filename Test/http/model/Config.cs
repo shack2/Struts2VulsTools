@@ -15,5 +15,6 @@ namespace http
         public String FileContent = "";
         public Boolean isExeCMD = false;
         public Boolean isUpFile = false;
+        public Boolean isSetUploadPath = false;
     }
 }

@@ -49,7 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_shellPath = new System.Windows.Forms.TextBox();
             this.txt_shellName = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btn_upload = new System.Windows.Forms.Button();
             this.txt_shellContent = new System.Windows.Forms.TextBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
@@ -104,6 +103,7 @@
             this.splitContainer_top = new System.Windows.Forms.SplitContainer();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lbl_info = new System.Windows.Forms.ToolStripStatusLabel();
+            this.setUploudPath = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -196,7 +196,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(789, 434);
+            this.tabPage2.Size = new System.Drawing.Size(789, 425);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "命令执行";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -216,8 +216,8 @@
             // splitContainer_CMD.Panel2
             // 
             this.splitContainer_CMD.Panel2.Controls.Add(this.txt_cmdResult);
-            this.splitContainer_CMD.Size = new System.Drawing.Size(783, 428);
-            this.splitContainer_CMD.SplitterDistance = 59;
+            this.splitContainer_CMD.Size = new System.Drawing.Size(783, 419);
+            this.splitContainer_CMD.SplitterDistance = 57;
             this.splitContainer_CMD.TabIndex = 13;
             // 
             // groupBox1
@@ -229,7 +229,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(783, 59);
+            this.groupBox1.Size = new System.Drawing.Size(783, 57);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             // 
@@ -292,7 +292,7 @@
             this.txt_cmdResult.Multiline = true;
             this.txt_cmdResult.Name = "txt_cmdResult";
             this.txt_cmdResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_cmdResult.Size = new System.Drawing.Size(783, 365);
+            this.txt_cmdResult.Size = new System.Drawing.Size(783, 358);
             this.txt_cmdResult.TabIndex = 5;
             this.txt_cmdResult.Text = "注：执行window的cmd建议输入：cmd /c 命令 这种格式，因为cmd /c执行完会关闭进程\r\n如：cmd /c ipconfig /all\r\n少数情况下" +
     "可能执行命令不能成功....";
@@ -304,7 +304,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(789, 434);
+            this.tabPage3.Size = new System.Drawing.Size(789, 425);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "文件上传";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -323,21 +323,21 @@
             // splitContainer_uploadFile.Panel2
             // 
             this.splitContainer_uploadFile.Panel2.Controls.Add(this.txt_shellContent);
-            this.splitContainer_uploadFile.Size = new System.Drawing.Size(783, 428);
-            this.splitContainer_uploadFile.SplitterDistance = 58;
+            this.splitContainer_uploadFile.Size = new System.Drawing.Size(783, 419);
+            this.splitContainer_uploadFile.SplitterDistance = 56;
             this.splitContainer_uploadFile.TabIndex = 11;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.setUploudPath);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.txt_shellPath);
             this.groupBox2.Controls.Add(this.txt_shellName);
-            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.btn_upload);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(783, 58);
+            this.groupBox2.Size = new System.Drawing.Size(783, 56);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
@@ -352,9 +352,10 @@
             // 
             // txt_shellPath
             // 
-            this.txt_shellPath.Location = new System.Drawing.Point(111, 20);
+            this.txt_shellPath.Enabled = false;
+            this.txt_shellPath.Location = new System.Drawing.Point(143, 20);
             this.txt_shellPath.Name = "txt_shellPath";
-            this.txt_shellPath.Size = new System.Drawing.Size(297, 21);
+            this.txt_shellPath.Size = new System.Drawing.Size(265, 21);
             this.txt_shellPath.TabIndex = 10;
             this.txt_shellPath.Text = "如：/home/web/shell.jsp";
             // 
@@ -365,15 +366,6 @@
             this.txt_shellName.Size = new System.Drawing.Size(75, 21);
             this.txt_shellName.TabIndex = 2;
             this.txt_shellName.Text = "bak.jsp";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 12);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "自定义路径：";
             // 
             // btn_upload
             // 
@@ -393,7 +385,7 @@
             this.txt_shellContent.Multiline = true;
             this.txt_shellContent.Name = "txt_shellContent";
             this.txt_shellContent.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txt_shellContent.Size = new System.Drawing.Size(783, 366);
+            this.txt_shellContent.Size = new System.Drawing.Size(783, 359);
             this.txt_shellContent.TabIndex = 8;
             this.txt_shellContent.Text = resources.GetString("txt_shellContent.Text");
             this.txt_shellContent.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_shellContent_KeyDown);
@@ -404,7 +396,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(789, 434);
+            this.tabPage5.Size = new System.Drawing.Size(789, 425);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "批量验证";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -423,8 +415,8 @@
             // splitContainer_batchCheck.Panel2
             // 
             this.splitContainer_batchCheck.Panel2.Controls.Add(this.bt_lvw);
-            this.splitContainer_batchCheck.Size = new System.Drawing.Size(783, 428);
-            this.splitContainer_batchCheck.SplitterDistance = 94;
+            this.splitContainer_batchCheck.Size = new System.Drawing.Size(783, 419);
+            this.splitContainer_batchCheck.SplitterDistance = 92;
             this.splitContainer_batchCheck.TabIndex = 30;
             // 
             // groupBox4
@@ -452,7 +444,7 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(783, 94);
+            this.groupBox4.Size = new System.Drawing.Size(783, 92);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             // 
@@ -665,10 +657,11 @@
             this.bt_lvw.ContextMenuStrip = this.contextMenuStrip1;
             this.bt_lvw.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bt_lvw.FullRowSelect = true;
+            this.bt_lvw.GridLines = true;
             this.bt_lvw.HideSelection = false;
             this.bt_lvw.Location = new System.Drawing.Point(0, 0);
             this.bt_lvw.Name = "bt_lvw";
-            this.bt_lvw.Size = new System.Drawing.Size(783, 330);
+            this.bt_lvw.Size = new System.Drawing.Size(783, 323);
             this.bt_lvw.TabIndex = 0;
             this.bt_lvw.UseCompatibleStateImageBehavior = false;
             this.bt_lvw.View = System.Windows.Forms.View.Details;
@@ -945,6 +938,17 @@
             this.lbl_info.Name = "lbl_info";
             this.lbl_info.Size = new System.Drawing.Size(0, 17);
             // 
+            // setUploudPath
+            // 
+            this.setUploudPath.AutoSize = true;
+            this.setUploudPath.Location = new System.Drawing.Point(23, 25);
+            this.setUploudPath.Name = "setUploudPath";
+            this.setUploudPath.Size = new System.Drawing.Size(108, 16);
+            this.setUploudPath.TabIndex = 11;
+            this.setUploudPath.Text = "自定义上传目录";
+            this.setUploudPath.UseVisualStyleBackColor = true;
+            this.setUploudPath.CheckStateChanged += new System.EventHandler(this.setUploudPath_CheckStateChanged);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -955,7 +959,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Struts2漏洞检查工具2018版 V2.1 by shack2 20190617";
+            this.Text = "Struts2漏洞检查工具2019版 V2.2 by shack2 20190925";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Main_FormClosing);
             this.Shown += new System.EventHandler(this.Main_Shown);
             this.tabControl1.ResumeLayout(false);
@@ -1017,7 +1021,6 @@
         private System.Windows.Forms.TextBox txt_shellName;
         private System.Windows.Forms.TextBox txt_shellContent;
         private System.Windows.Forms.TextBox txt_shellPath;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_cmdResult;
         private System.Windows.Forms.Button btn_startCmd;
         private System.Windows.Forms.Label label5;
@@ -1078,6 +1081,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel lbl_info;
+        private System.Windows.Forms.CheckBox setUploudPath;
     }
 }
 
